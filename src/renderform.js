@@ -5,7 +5,7 @@ const renderForm = () => {
     formDiv.classList.add('formDiv');
     formDiv.innerHTML = 
     `
-    <form action="./dist/index.html"> 
+    <form action="./index.html"> 
     <label for="title"></label>
     <input type="text" id="title" name="title" required placeholder="Title">
     <br>
@@ -18,7 +18,7 @@ const renderForm = () => {
         <option value="normal">Normal</option>
     </select>
     <br>
-    <input type="button" name="submit" id="submitbutton">
+    <input value="Submit" type="button" name="submit" id="submitbutton">
     <br>
     </form>
     <button id='x'>x</button>

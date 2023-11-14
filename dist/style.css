@@ -72,6 +72,7 @@ header {
 }
 
 .formDiv > form > input[name="submit"] {
+    color: black;
     padding: 0.5rem;
     text-align: center;
     background-color: rgba(20,40,120,0.3);
