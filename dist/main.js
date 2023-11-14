@@ -1,0 +1,1 @@
+(()=>{"use strict";function e(e,t){return Math.floor(Math.random()*(t-e+1)+e)}document.querySelector("#theme").addEventListener("click",(()=>{let t=document.querySelector("body").style.backgroundImage.charAt(24),r=e(1,10);for(;t===r;)r=e(1,10);let o="./assets/images/img"+r+".jpg";document.querySelector("body").style.backgroundImage=`url('${o}')`}))})();
