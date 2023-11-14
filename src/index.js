@@ -2,6 +2,7 @@
 import { addProject } from "./add";
 import { changeTheme } from "./theme";
 import { isUrgent } from "./helpers"; 
+import events from "inquirer/lib/utils/events";
 
 let urgentProjects = [];
 let normalProjects = [];
@@ -14,7 +15,8 @@ document.querySelector("#theme").addEventListener('click', changeTheme);
 //     else { normalProjects.append(newProject); }
 // });
 
-document.querySelector("#new").addEventListener('click', async () => {
+document.querySelector("#new").addEventListener('click', async (event) => {
+    event.preventDefault();
     try {
         let newProject = await addProject();
         if (isUrgent(newProject)) {

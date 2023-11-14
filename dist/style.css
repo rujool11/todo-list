@@ -71,6 +71,27 @@ header {
     color: black;
 }
 
+.tasks {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.tasks > .task {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    font: white;
+    border-radius: 10px;
+}
+
+.urgent {
+    color: maroon;
+}
+
+.normal {
+    color: forestgreen;
+}
+
 .formDiv > form > input[name="submit"] {
     color: black;
     padding: 0.5rem;
