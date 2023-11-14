@@ -9,7 +9,7 @@ function makeProject(name,desc,priority) {
 
 const parseFormAndMakeObject = () => {
     renderForm();
-    document.querySelector("#submit").addEventListener('click', () => {
+    document.querySelector("#x").addEventListener('click', () => {
         unrenderForm();
     })
 };

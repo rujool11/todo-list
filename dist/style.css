@@ -67,6 +67,10 @@ header {
     justify-content: center;
 }
 
+::placeholder {
+    color: black;
+}
+
 .formDiv > form > input,select {
     font-size: 2rem;
     font-weight: 400;
@@ -74,17 +78,25 @@ header {
     margin: 0.5rem;
     color: black;
     background-color: transparent;
-    border: 2px black;
+    border: 2px solid beige;
+    border-radius: 10px;
 }
 
 .formDiv > button {
-    border-radius: 10px;
-    font-size: 2rem;
-    padding: 1rem;
+    width: 2rem;
+    padding: 0;
+    margin-left: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
     font-weight: 400;
-    background-color: rgba(25,150,200,0.4);
+    background-color: rgba(0,0,0,0.2);
 }
 
+#submit {
+    background-color: rgba(30,120,230,0.2);
+}
 
 
 button {

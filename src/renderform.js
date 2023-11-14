@@ -5,12 +5,12 @@ const renderForm = () => {
     formDiv.classList.add('formDiv');
     formDiv.innerHTML = 
     `
-    <form action="submit_form.php" method="post">
+    <form action="./dist/index.html"> 
     <label for="title"></label>
-    <input type="text" id="title" name="title" required placeholder="title">
+    <input type="text" id="title" name="title" required placeholder="Title">
     <br>
     <label for="description"></label>
-    <input id="description" name="description"required placeholder="description">
+    <input id="description" name="description"required placeholder="Description">
     <br>
     <label for="urgency"></label>
     <select id="urgency" name="urgency" required>
@@ -18,7 +18,10 @@ const renderForm = () => {
         <option value="normal">Normal</option>
     </select>
     <br>
-    <button id="submit">Submit</button>
+    <input type="submit" name="submit">
+    <br>
+    </form>
+    <button id='x'>x</button>
     `
     fullCover.appendChild(formDiv);
     document.querySelector('body').appendChild(fullCover);
