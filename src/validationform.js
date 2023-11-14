@@ -9,7 +9,7 @@ function makeProject(name,desc,priority) {
 
 const parseFormAndMakeObject = () => {
     renderForm();
-    document.querySelector("#sumbit").addEventListener('click', () => {
+    document.querySelector("#submit").addEventListener('click', () => {
         unrenderForm();
     })
 };

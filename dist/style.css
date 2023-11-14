@@ -52,10 +52,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
 }
 
 .formDiv {
+    min-width: 20vh;
+    min-height: 20vh;
     padding: 2rem;
     margin: 2rem;
     border-radius: 2rem;
@@ -63,23 +64,25 @@ header {
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 90;
+    justify-content: center;
 }
 
-.formDiv > input {
-    border: none;
-    background-color: inherit;
+.formDiv > form > input,select {
+    font-size: 2rem;
+    font-weight: 400;
     padding: 0.5rem;
     margin: 0.5rem;
+    color: black;
+    background-color: transparent;
+    border: 2px black;
 }
 
 .formDiv > button {
     border-radius: 10px;
+    font-size: 2rem;
     padding: 1rem;
     font-weight: 400;
     background-color: rgba(25,150,200,0.4);
-    z-index: 500;
 }
 
 

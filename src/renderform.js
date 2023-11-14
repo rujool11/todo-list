@@ -26,7 +26,8 @@ const renderForm = () => {
 };
 
 const unrenderForm = () => {
-
+    const fullCover = document.querySelector('.fullcover');
+    fullCover.remove();
 };
 
 export { renderForm, unrenderForm };
