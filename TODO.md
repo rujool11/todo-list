@@ -1,9 +1,6 @@
 ### **TODO**
 
-finish working on form 
 
---> renderform, add and validation form files
+--> add deletion, and task completion functionality
 
---> styling the form and unrendering when submit button is pressed
-
---> submit form and get input values, create object and pass to add function
+--> figure out way to get nav to not scroll, but the tasks div can scroll (sticky not working, maybe a selectors/priorities issue)
