@@ -18,7 +18,7 @@ const renderForm = () => {
         <option value="normal">Normal</option>
     </select>
     <br>
-    <input type="submit" name="submit">
+    <input type="button" name="submit" id="submitbutton">
     <br>
     </form>
     <button id='x'>x</button>
