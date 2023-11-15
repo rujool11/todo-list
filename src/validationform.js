@@ -10,20 +10,6 @@ function Project(name,desc,priority) {
 let newProject;
 
 
-// const parseFormAndMakeObject = () => {
-//     renderForm();
-//     document.querySelector("#submitbutton").addEventListener('click', () => {
-//        let title = document.getElementById("title").value;
-//        let priority = document.getElementById("priority").value;
-//        let description = document.getElementById("description").value;
-//        newProject = new Project(title,description,priority);
-//        unrenderForm();
-//     });
-//     document.querySelector("#x").addEventListener('click', () => {
-//         unrenderForm();
-//     });
-//     return newProject;
-// };
 
 const parseFormAndMakeObject = () => {
     return new Promise((resolve, reject) => {

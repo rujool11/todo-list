@@ -72,7 +72,7 @@ header {
 }
 
 ::placeholder {
-    color: white;
+    color: black;
 }
 
 .urgent {
@@ -88,7 +88,7 @@ header {
 }
 
 .formDiv > form > input[name="submit"] {
-    color: white;
+    color: black;
     padding: 0.5rem;
     text-align: center;
     background-color: rgba(20,40,120,0.3);
@@ -122,7 +122,7 @@ header {
     text-align: center;
     border-radius: 5px;
     font-size: 1rem;
-    color: white;
+    color: black;
     font-weight: 400;
     background-color: rgba(0,0,0,0.2);
 }
