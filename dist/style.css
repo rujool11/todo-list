@@ -40,7 +40,8 @@ header {
     flex-direction: column;
     align-items: center;
     position: sticky;
-    max-height: 90vh;
+    height: 85vh;
+    top: 3rem;
     z-index: 9999;
 }
 
@@ -71,22 +72,7 @@ header {
 }
 
 ::placeholder {
-    color: black;
-}
-
-.tasks {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-#tasks > .task {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    padding: 0.5rem;
-    margin: 0.5rem;
-    font: white;
-    border-radius: 2rem;
+    color: white;
 }
 
 .urgent {
@@ -94,11 +80,15 @@ header {
 }
 
 .normal {
-    color: forestgreen;
+    color: darkgreen;
+}
+
+.normal, .urgent {
+    font-weight: 700;
 }
 
 .formDiv > form > input[name="submit"] {
-    color: black;
+    color: white;
     padding: 0.5rem;
     text-align: center;
     background-color: rgba(20,40,120,0.3);
@@ -121,6 +111,10 @@ header {
     border-radius: 10px;
 }
 
+.projDiv {
+    border-right: beige solid 2px;
+}
+
 .formDiv > button {
     width: 2rem;
     padding: 0;
@@ -133,6 +127,29 @@ header {
     background-color: rgba(0,0,0,0.2);
 }
 
+.mDiv {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font: white;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.doneButton, .deleteButton {
+    background-color: rgba(20,40,120,0.3);
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
 
 button {
     margin-top: 1rem;

@@ -3,6 +3,8 @@ import { isUrgent } from "./helpers";
 const renderTask = (newProjectObject) => {
     let tasks = document.querySelector("#tasks");
 
+        let mDiv = document.createElement('div');
+        mDiv.classList.add('mDiv');
         let projDiv = document.createElement('div');
         projDiv.classList.add('task'); 
         let title = document.createElement('h3');
@@ -11,6 +13,7 @@ const renderTask = (newProjectObject) => {
         let desc = document.createElement('p');
         desc.textContent = `${newProjectObject.desc}`;
         projDiv.appendChild(desc);
+        projDiv.classList.add('projDiv');
 
         let priority = document.createElement('p');
         priority.textContent = `${newProjectObject.priority}`;
@@ -20,7 +23,19 @@ const renderTask = (newProjectObject) => {
             priority.classList.add('normal');
         }
         projDiv.appendChild(priority);
-        tasks.appendChild(projDiv);
+        mDiv.appendChild(projDiv);
+        let deleteButton = document.createElement('button');
+        deleteButton.classList.add('deleteButton');
+        let doneButton = document.createElement('button');
+        doneButton.classList.add('doneButton');
+        deleteButton.innerText = 'Delete';
+        doneButton.innerText = 'Completed';
+        let buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('buttonsDiv');
+        buttonsDiv.appendChild(deleteButton);
+        buttonsDiv.appendChild(doneButton);
+        mDiv.appendChild(buttonsDiv);
+        tasks.appendChild(mDiv);
 };
 
 
