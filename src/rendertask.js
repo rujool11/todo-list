@@ -29,6 +29,12 @@ const renderTask = (newProjectObject) => {
         let doneButton = document.createElement('button');
         doneButton.classList.add('doneButton');
         deleteButton.innerText = 'Delete';
+        //event listener attached here, since attaching in index means 
+        // that it is attached before the event exists, which causes problems
+        deleteButton.addEventListener('click', () => {
+            console.log('clicked');
+            unrenderTask(deleteButton);
+        });
         doneButton.innerText = 'Completed';
         let buttonsDiv = document.createElement('div');
         buttonsDiv.classList.add('buttonsDiv');
@@ -39,8 +45,9 @@ const renderTask = (newProjectObject) => {
 };
 
 
-const unrenderTask = (newProjectObject) => {
-
+const unrenderTask = (clickedButton) => {
+    let taskTab = clickedButton.parentNode.parentNode; 
+    taskTab.remove();
 };
 
 export { renderTask, unrenderTask };

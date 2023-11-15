@@ -22,3 +22,4 @@ document.querySelector("#new").addEventListener('click', async (event) => {
         console.error(error);
     }
 });
+
