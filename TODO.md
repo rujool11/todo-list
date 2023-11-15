@@ -1,10 +1,7 @@
-### **TODO**
+### **TODO** 
 
-
---> add deletion, and task completion functionality
-
+--> clean up rendertask code, split functions into different files (check commented out code )
 
 --> add sorting by urgency
 
-
---> clean code, refactor css 
+--> refactor css 

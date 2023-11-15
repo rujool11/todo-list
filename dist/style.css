@@ -115,6 +115,11 @@ header {
     border-right: beige solid 2px;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+    z-index: 9999;
+}
+
 .formDiv > button {
     width: 2rem;
     padding: 0;
