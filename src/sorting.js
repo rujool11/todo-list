@@ -5,7 +5,6 @@ function allClicked() {
     });
 }
 
-
 function normalClicked() {
     const urgent = document.querySelectorAll('.urgent');
     const normal = document.querySelectorAll('.normal');
