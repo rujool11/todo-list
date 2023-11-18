@@ -41,7 +41,7 @@ header {
     align-items: center;
     position: sticky;
     height: 85vh;
-    top: 3rem;
+    top: 3.5rem;
     z-index: 9999;
 }
 
@@ -176,4 +176,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     min-width: 70vw;
+}
+
+.invisible {
+    pointer-events: none;
+    display: none;
+    z-index: 99999;
 }
